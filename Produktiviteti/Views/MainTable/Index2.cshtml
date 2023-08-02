@@ -1,0 +1,101 @@
+﻿@model MainTableViewModel
+
+<h1>Main Table Data</h1>
+
+<form method="post" action="/MainTable/SavePergjigjas">
+    <table class="table">
+        <thead>
+        <thead>
+            <tr>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke">
+                    Shiriti i kerkesave per plotesim
+                </th>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke;text-align:center">
+                    Terren
+                </th>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke;text-align:center ">
+                    Kerkese me email
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <thead>
+            <tr>
+                <th style="height:100%; width:20%; border:2px solid;background-color:whitesmoke;text-align:center">
+                    Ora
+                </th>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke;text-align:center">
+                    <div class="form-group">
+                        <label asp-for="KerkesaId">Kerkesa</label>
+                        <select asp-for="KerkesaId" asp-items="@Model.Tipi_KerkesesList" class="form-control">
+                            <option value="">-- Select Kerkesa --</option>
+                        </select>
+                        <span asp-validation-for="KerkesaId" class="text-danger"></span>
+                    </div>
+                </th>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke;text-align:center">
+                    x
+                    <div class="form-group">
+                        <label asp-for="KerkesaId">Kerkesa</label>
+                        <select asp-for="KerkesaId" asp-items="@Model.Tipi_KerkesesList" class="form-control">
+                            <option value="">-- Select Kerkesa --</option>
+                        </select>
+                        <span asp-validation-for="KerkesaId" class="text-danger"></span>
+                    </div>
+                </th>
+                <th style="height:100%; width:20%; border:2px solid; background-color:whitesmoke;text-align:center">
+                    <div class="form-group">
+                        <label asp-for="KerkesaId">Kerkesa</label>
+                        <select asp-for="KerkesaId" asp-items="@Model.Tipi_KerkesesList" class="form-control">
+                            <option value="">-- Select Kerkesa --</option>
+                        </select>
+                        <span asp-validation-for="KerkesaId" class="text-danger"></span>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+        </thead>
+        <tbody>
+            @if (Model.MainTables != null)
+            {
+                @foreach (var mainTable in Model.MainTables)
+                {
+                    <tr>
+                        <td style="height:100%; width:20%; border:2px solid;background-color:lightcyan">
+                        <td style="height:100%; width:20%; border:2px solid;background-color:lightcyan">
+                                @if (mainTable != null)
+                                {
+                                <div class="card">
+                                    <div class="card-body" style="text-align:center">
+                                        <p class="card-text">@mainTable.ora</p>
+                                    </div>
+                                </div>
+                                }
+                        </td>
+                        </td>
+                        <td style="height:100%; width:20%; border:2px solid;background-color:whitesmoke">
+                            @if (Model.Pergjigjas != null)
+                            {
+                                <ul class="list-group">
+                                    @foreach (var pergjigja in Model.Pergjigjas)
+                                    {
+                                        <li class="list-group-item">
+                                            <label for="pergjigja-@pergjigja.PergjigjaId">@pergjigja?.Emri_Pergjigja</label>
+                                            <input type="text" id="pergjigja-@pergjigja.PergjigjaId" name="pergjigjaIds" value="@pergjigja.PergjigjaId" class="form-control" />
+                                        </li>
+                                    }
+                                </ul>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            }
+                        </td>
+                        <td>
+                        <td style="height:100%; width:20%; border:2px solid;background-color:whitesmoke">
+                            <!-- Placeholder column -->
+                        </td>
+           
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</form>

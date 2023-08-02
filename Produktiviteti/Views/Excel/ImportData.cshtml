@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Main_Table>
+
+<h1>Imported Data</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>DataSot</th>
+            <th>Ora</th>
+    
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Main_Table_Id</td>
+                <td>@item.data_sot</td>
+                <td>@item.ora</td>
+   
+            </tr>
+        }
+    </tbody>
+</table>

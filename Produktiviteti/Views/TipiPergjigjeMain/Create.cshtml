@@ -1,0 +1,23 @@
+﻿@*@model MainTableViewModel
+
+<h1>Create Tipi Pergjigja Main</h1>
+
+<form method="post" action="/TipiPergjigjamain/Create">
+    <div class="form-group">
+        <label for="id">ID</label>
+        <input type="text" id="id" name="id" class="form-control" value="@Model." />
+    </div>
+
+   
+
+    <div class="form-group">
+        <label for="pergjigjaIds">Pergjigja IDs</label>
+        @foreach (var pergjigja in Model.Pergjigjas)
+        {
+            <input type="hidden" name="pergjigjaIds" value="@pergjigja.PergjigjaId" />
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+*@

@@ -1,0 +1,39 @@
+﻿@model List<Tipi_Pergjigje_Main>
+
+<h1>Tipi Pergjigje Main Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Pergjigja Main ID</th>
+            <th>Pergjigja Main</th>
+            <th>Pergjigja ID</th>
+            <th>Main Table ID</th>
+            <th>Kerkesa Id</th>
+            <th>User Id</th>
+
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.PergjigjaMainId</td>
+                <td>@item.PergjigjaMain</td>
+                <td>@item.PergjigjaId</td>
+                <td>@item.Main_Table_Id</td>
+                <td>@item.KerkesaId</td>
+                <td>@item.userId
+                </td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.PergjigjaMainId">Details</a> |
+                    <a asp-action="Edit" asp-route-id="@item.PergjigjaMainId">Edit</a> |
+                    <a asp-action="Delete" asp-route-id="@item.PergjigjaMainId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
