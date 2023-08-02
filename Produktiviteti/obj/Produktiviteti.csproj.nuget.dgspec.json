@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wxemi\\OneDrive\\Desktop\\prod2906mendryshime\\Produktiviteti\\Produktiviteti.csproj": {}
+    "C:\\Users\\wxemi\\OneDrive\\Desktop\\Productivity Measurement\\Produktiviteti\\Produktiviteti.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wxemi\\OneDrive\\Desktop\\prod2906mendryshime\\Produktiviteti\\Produktiviteti.csproj": {
+    "C:\\Users\\wxemi\\OneDrive\\Desktop\\Productivity Measurement\\Produktiviteti\\Produktiviteti.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wxemi\\OneDrive\\Desktop\\prod2906mendryshime\\Produktiviteti\\Produktiviteti.csproj",
+        "projectUniqueName": "C:\\Users\\wxemi\\OneDrive\\Desktop\\Productivity Measurement\\Produktiviteti\\Produktiviteti.csproj",
         "projectName": "Produktiviteti",
-        "projectPath": "C:\\Users\\wxemi\\OneDrive\\Desktop\\prod2906mendryshime\\Produktiviteti\\Produktiviteti.csproj",
+        "projectPath": "C:\\Users\\wxemi\\OneDrive\\Desktop\\Productivity Measurement\\Produktiviteti\\Produktiviteti.csproj",
         "packagesPath": "C:\\Users\\wxemi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wxemi\\OneDrive\\Desktop\\prod2906mendryshime\\Produktiviteti\\obj\\",
+        "outputPath": "C:\\Users\\wxemi\\OneDrive\\Desktop\\Productivity Measurement\\Produktiviteti\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
